@@ -25,15 +25,16 @@
 
 .docs-navigation {
   position: fixed;
-  top: 70;
+  top: var(--topNavHeaderHeight);
   left: 0;
   overflow: scroll;
   overflow-y: auto;
   width: var(--leftNavWidth);
   height: calc(100vh - 50px);
   z-index: 1;
-  border-right: 1px solid var(--leftNavBorderColor);
-  box-shadow: var(--leftNavElevation);
+  // border-right: 1px solid var(--leftNavBorderColor);
+  // box-shadow: var(--leftNavElevation);
+  box-shadow: -3px 1px 8px #82adbd;
 }
 
 .bg-sidebar {
@@ -42,15 +43,12 @@
 }
 
 .docs-navigation > .nav {
-  margin: 0px 20px 80px 20px;
-  padding: 16px 0px;
   color: var(--colorInkPrimary);
 }
 
 .docs-navigation .nav .nav-item {
   position: relative;
   transition: var(--transitionDefault);
-  padding: 2px;
 
   &.is-tab a {
     color: var(--leftNavInkTab);
@@ -67,7 +65,7 @@
 }
 
 .nav-link {
-  padding: 8px;
+  padding: 5px 15px;
 }
 
 .docs-navigation .nav .nav-item:hover {
@@ -91,10 +89,6 @@
   display: block;
 }
 
-.docs-navigation .nav .nav-item .nav-link {
-  height: 36px;
-  border-radius: var(--borderRadiusDefault);
-}
 /* 5.4 Nav + Page Tabs */
 /* Todo: split this */
 
@@ -102,9 +96,6 @@
   display: flex;
   align-items: center;
   color: var(--leftNavInk);
-  height: 40px;
-  border-top-left-radius: var(--borderRadiusDefault);
-  border-top-right-radius: var(--borderRadiusDefault);
 }
 
 .nav.nav-light .nav-item .nav-link {
@@ -148,7 +139,7 @@
 .docs-navigation .nav > .nav-item > .nav-link.active {
   background-color: var(--leftNavItemActiveBackground);
   color: var(--leftNavItemActiveInk);
-  border-radius: var(--borderRadiusDefault);
+  font-weight: 600;
 }
 
 /*
