@@ -32,8 +32,6 @@
   width: var(--leftNavWidth);
   height: calc(100vh - 50px);
   z-index: 1;
-  // border-right: 1px solid var(--leftNavBorderColor);
-  // box-shadow: var(--leftNavElevation);
   box-shadow: -3px 1px 8px #82adbd;
 }
 
@@ -66,15 +64,10 @@
 
 .nav-link {
   padding: 5px 15px;
-}
 
-.docs-navigation .nav .nav-item:hover {
-  background: var(--leftNavItemHoverBackground);
-  border-radius: var(--borderRadiusDefault);
-}
-
-.docs-navigation .nav .nav-item:hover a {
-  color: var(--leftNavInk);
+  &:hover {
+    background-color: #e8e8e8;
+  }
 }
 
 .docs-navigation .nav .nav {
@@ -105,10 +98,6 @@
 .nav:not(.nav-pills) .nav-item .nav-link.active,
 .nav:not(.nav-pills) .nav-item .nav-link:hover {
   color: var(--leftNavInk);
-}
-
-.nav:not(.nav-pills) .nav-item .nav .nav-item .nav-link:hover {
-  background-color: var(--leftNavItemHoverBackgroundAlt);
 }
 
 .nav.nav-separator .nav-item .nav-link {
@@ -161,6 +150,7 @@
 .docs-navigation .nav > .nav-item > .nav-link.active.group {
   color: var(--leftNavInk);
   background-color: transparent;
+  font-weight: inherit;
 }
 
 .docs-navigation .nav > .nav-item > .nav-link.group:after {
