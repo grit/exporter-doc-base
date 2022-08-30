@@ -406,9 +406,14 @@
             "label": "Switch"
           },
           {
-            "key": "test",
-            "type": "Text",
-            "default": "",
+            "key": "test1",
+            "type": "Enum",
+            "default": 0,
+            "label": "Test"
+          },
+          {
+            "key": "test2",
+            "type": "Typography",
             "label": "Test"
           }
         ]
