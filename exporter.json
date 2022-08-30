@@ -395,7 +395,7 @@
         "properties": [
           {
             "key": "text",
-            "type": "String",
+            "type": "string",
             "default": "Sample Text",
             "label": "Text"
           },
@@ -412,7 +412,7 @@
           },
           {
             "key": "test2",
-            "type": "Typography",
+            "type": "typography",
             "label": "Test"
           }
         ]
