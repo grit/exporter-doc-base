@@ -312,23 +312,11 @@
       {
         "key": "io.supernova.documentation-main.component-health",
         "category": "Components",
-        "title": "Custom Block",
-        "description": "This is custom block.",
+        "title": "Component Health (beta)",
+        "description": "Show component health and additional attributes",
         "icon": "icons/custom-block-health.png",
         "mode": "block",
         "properties": [
-          {
-            "key": "text",
-            "type": "string",
-            "default": "Sample Text",
-            "label": "Text"
-          },
-          {
-            "key": "switch",
-            "type": "boolean",
-            "default": false,
-            "label": "Switch"
-          },
           {
             "key": "componentId",
             "default": "",
@@ -394,6 +382,28 @@
             "default": "",
             "type": "componentProperties",
             "label": "Properties"
+          }
+        ]
+      },
+      {
+        "key": "io.supernova.documentation-main.component-test",
+        "category": "Components",
+        "title": "Test Block",
+        "description": "This is Custom Block Test",
+        "icon": "icons/custom-block-health.png",
+        "mode": "block",
+        "properties": [
+          {
+            "key": "text",
+            "type": "string",
+            "default": "Sample Text",
+            "label": "Text"
+          },
+          {
+            "key": "switch",
+            "type": "boolean",
+            "default": false,
+            "label": "Switch"
           }
         ]
       }
