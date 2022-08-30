@@ -407,8 +407,7 @@
           },
           {
             "key": "test1",
-            "type": "Enum",
-            "default": 0,
+            "type": "enum",
             "label": "Test"
           },
           {
