@@ -386,7 +386,7 @@
         ]
       },
       {
-        "key": "io.supernova.documentation-main.component-test",
+        "key": "io.supernova.documentation-main.component-health",
         "category": "Components",
         "title": "Test Block",
         "description": "This is Custom Block Test",
