@@ -404,16 +404,6 @@
             "type": "boolean",
             "default": false,
             "label": "Switch"
-          },
-          {
-            "key": "test1",
-            "type": "enum",
-            "label": "Test"
-          },
-          {
-            "key": "test2",
-            "type": "typography",
-            "label": "Test"
           }
         ]
       }
