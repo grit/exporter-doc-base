@@ -384,6 +384,34 @@
             "label": "Properties"
           }
         ]
+      },
+      {
+        "key": "io.supernova.documentation-main.component-test",
+        "category": "Components",
+        "title": "Test Block",
+        "description": "This is Custom Block Test",
+        "icon": "icons/custom-block-health.png",
+        "mode": "block",
+        "properties": [
+          {
+            "key": "text",
+            "type": "String",
+            "default": "Sample Text",
+            "label": "Text"
+          },
+          {
+            "key": "switch",
+            "type": "boolean",
+            "default": false,
+            "label": "Switch"
+          },
+          {
+            "key": "test",
+            "type": "Text",
+            "default": "",
+            "label": "Test"
+          }
+        ]
       }
     ],
     "blockVariants": {
