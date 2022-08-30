@@ -312,8 +312,8 @@
       {
         "key": "io.supernova.documentation-main.component-health",
         "category": "Components",
-        "title": "Component Health (beta)",
-        "description": "Show component health and additional attributes",
+        "title": "Custom Block",
+        "description": "This is custom block.",
         "icon": "icons/custom-block-health.png",
         "mode": "block",
         "properties": [
