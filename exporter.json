@@ -402,6 +402,7 @@
           {
             "key": "number",
             "type": "number",
+            "default": 0,
             "label": "Number"
           },
           {
