@@ -400,6 +400,14 @@
             "label": "Text"
           },
           {
+            "key": "text2",
+            "type": "string",
+            "default": "Multiline Text",
+            "label": "Multiline Text",
+            "isMultiline": true,
+            "inputType": "plain"
+          },
+          {
             "key": "number",
             "type": "number",
             "default": 0,
@@ -410,6 +418,11 @@
             "type": "boolean",
             "default": false,
             "label": "Switch"
+          },
+          {
+            "key": "image",
+            "type": "image",
+            "label": "Image"
           }
         ]
       }
