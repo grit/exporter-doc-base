@@ -400,6 +400,11 @@
             "label": "Text"
           },
           {
+            "key": "number",
+            "type": "number",
+            "label": "Number"
+          },
+          {
             "key": "switch",
             "type": "boolean",
             "default": false,
