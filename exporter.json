@@ -427,7 +427,8 @@
           {
             "key": "enum",
             "type": "enum",
-            "default": ["p1", "p2"],
+            "enum": ["name", "team"],
+            "default": "name",
             "label": "Enum"
           }
         ]
