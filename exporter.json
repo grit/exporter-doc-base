@@ -400,14 +400,6 @@
             "label": "Text"
           },
           {
-            "key": "text2",
-            "type": "string",
-            "default": "Multiline Text",
-            "label": "Multiline Text",
-            "isMultiline": true,
-            "inputType": "code"
-          },
-          {
             "key": "number",
             "type": "number",
             "default": 0,
@@ -423,18 +415,6 @@
             "key": "image",
             "type": "image",
             "label": "Image"
-          },
-          {
-            "key": "typo",
-            "type": "typography",
-            "default": "",
-            "label": "Typography"
-          },
-          {
-            "key": "color",
-            "type": "color",
-            "default": "",
-            "label": "Color"
           }
         ]
       }
