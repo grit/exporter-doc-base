@@ -425,8 +425,15 @@
             "label": "Image"
           },
           {
+            "key": "typo",
+            "type": "typography",
+            "default": "",
+            "label": "Typography"
+          },
+          {
             "key": "color",
             "type": "color",
+            "default": "",
             "label": "Color"
           }
         ]
