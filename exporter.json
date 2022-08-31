@@ -425,10 +425,9 @@
             "label": "Image"
           },
           {
-            "key": "enum",
-            "type": "enum",
-            "default": [{"name": "Ronaldo", "team": "Juventus"}],
-            "label": "Enum"
+            "key": "color",
+            "type": "color",
+            "label": "Color"
           }
         ]
       }
