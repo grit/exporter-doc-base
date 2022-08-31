@@ -427,7 +427,7 @@
           {
             "key": "enum",
             "type": "enum",
-            "default": {"name": "Ronaldo", "team": "Juventus"},
+            "default": {"Number": 0},
             "label": "Enum"
           }
         ]
