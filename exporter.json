@@ -427,7 +427,7 @@
           {
             "key": "enum",
             "type": "enum",
-            "default": "name",
+            "default": ["p1", "p2"],
             "label": "Enum"
           }
         ]
