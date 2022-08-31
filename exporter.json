@@ -405,7 +405,7 @@
             "default": "Multiline Text",
             "label": "Multiline Text",
             "isMultiline": true,
-            "inputType": "plain"
+            "inputType": "code"
           },
           {
             "key": "number",
@@ -423,6 +423,12 @@
             "key": "image",
             "type": "image",
             "label": "Image"
+          },
+          {
+            "key": "enum",
+            "type": "enum",
+            "default": [1, 2],
+            "label": "Enum"
           }
         ]
       }
