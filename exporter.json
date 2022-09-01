@@ -417,6 +417,22 @@
             "label": "Image"
           }
         ]
+      },
+      {
+        "key": "uig.badge",
+        "category": "Components",
+        "title": "Status Badge",
+        "description": "A badge indicating the status of the element.",
+        "icon": "icons/custom-block-badge.png",
+        "mode": "block",
+        "properties": [
+          {
+            "key": "url",
+            "type": "string",
+            "default": "Link URL",
+            "label": "URL"
+          }
+        ]
       }
     ],
     "blockVariants": {
@@ -614,6 +630,37 @@
         {
           "name": "Boxed",
           "key": "boxed"
+        }
+      ],
+      "uig.badge": [
+        {
+          "name": "Pending",
+          "key": "pending",
+          "isDefault": true
+        },
+        {
+          "name": "Design Only",
+          "key": "design"
+        },
+        {
+          "name": "See JIRA",
+          "key": "jira"
+        },
+        {
+          "name": "Now Available",
+          "key": "avairable"
+        },
+        {
+          "name": "Implemented",
+          "key": "implemented"
+        },
+        {
+          "name": "Standard",
+          "key": "standard"
+        },
+        {
+          "name": "Required",
+          "key": "required"
         }
       ]
     }
