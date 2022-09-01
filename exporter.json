@@ -420,7 +420,6 @@
       },
       {
         "key": "io.supernova.documentation-main.badge",
-        "type": "StatusBadge",
         "category": "Components",
         "title": "Status Badge",
         "description": "A badge indicating the status of the element.",
@@ -633,7 +632,7 @@
           "key": "boxed"
         }
       ],
-      "StatusBadge": [
+      "io.supernova.documentation-main.badge": [
         {
           "name": "Pending",
           "key": "pending",
