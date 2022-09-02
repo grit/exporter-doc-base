@@ -430,38 +430,38 @@
             "key": "url",
             "type": "string",
             "default": "Link URL",
-            "label": "URL",
-            "variantKey": [
-              {
-                "name": "Pending",
-                "key": "pending",
-                "isDefault": true
-              },
-              {
-                "name": "Design Only",
-                "key": "design"
-              },
-              {
-                "name": "See JIRA",
-                "key": "jira"
-              },
-              {
-                "name": "Now Available",
-                "key": "avairable"
-              },
-              {
-                "name": "Implemented",
-                "key": "implemented"
-              },
-              {
-                "name": "Standard",
-                "key": "standard"
-              },
-              {
-                "name": "Required",
-                "key": "required"
-              }
-            ]
+            "label": "URL"
+          }
+        ],
+        "variants": [
+          {
+            "name": "Pending",
+            "key": "pending",
+            "isDefault": true
+          },
+          {
+            "name": "Design Only",
+            "key": "design"
+          },
+          {
+            "name": "See JIRA",
+            "key": "jira"
+          },
+          {
+            "name": "Now Available",
+            "key": "avairable"
+          },
+          {
+            "name": "Implemented",
+            "key": "implemented"
+          },
+          {
+            "name": "Standard",
+            "key": "standard"
+          },
+          {
+            "name": "Required",
+            "key": "required"
           }
         ]
       }
