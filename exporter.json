@@ -445,6 +445,10 @@
         {
           "name": "Pills",
           "key": "pills"
+        },
+        {
+          "name": "Do",
+          "key": "do"
         }
       ],
       "TokenList": [
