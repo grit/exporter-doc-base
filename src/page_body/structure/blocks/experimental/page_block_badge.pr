@@ -7,16 +7,6 @@
 {[ let badgeTitle = "Guideline has not been finalized." /]}
 {[ let badgeText = "Pending" /]}
 
-{[ switch variant ]}
-    {[ case "pending" ]}
-        {[ badgeClass = "uig-badge--pending" /]}
-        {[ badgeTitle = "Guideline has not been finalized." /]}
-        {[ badgeText = "Pending" /]}
-    {[ case "design" ]}
-        {[ badgeClass = "uig-badge--design" /]}
-        {[ badgeTitle = "No reusable code available." /]}
-        {[ badgeText = "Design Only" /]}
-{[/]}
 <span class="uig-badge {{ badgeClass }}" title="{{ badgeTitle }}">{{ badgeText }}</span>
 
 
