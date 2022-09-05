@@ -1,0 +1,12 @@
+{[ let block = context /]}
+
+{* This block is variant enabled, fetch it *}
+{[ let variant = block.variantKey /]}
+{[ if (variant === "pending") ]}
+    <span class="badge pending" title="Guideline has not been finalized.">Pending</span>
+{[ elseif (variant === "design") ]}
+    <span class="badge design" title="No reusable code available.">Design Only</span>
+{[/]}
+
+
+
