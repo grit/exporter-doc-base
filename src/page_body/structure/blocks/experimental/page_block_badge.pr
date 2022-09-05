@@ -3,10 +3,23 @@
 {* This block is variant enabled, fetch it *}
 {[ let variant = block.variantKey /]}
 {[ let url = block.properties.url /]}
-{[ let badgeClass = "uig-badge--pending" /]}
-{[ let badgeTitle = "Guideline has not been finalized." /]}
-{[ let badgeText = "Pending" /]}
+{[ let badgeClass = "" /]}
+{[ let badgeTitle = "" /]}
+{[ let badgeText = "" /]}
 
+{[ if (variant === "pending") ]}
+    {[ badgeClass = "uig-badge--pending" /]}
+    {[ badgeTitle = "Guideline has not been finalized." /]}
+    {[ badgeText = "Pending" /]}
+{[ elseif (variant === "design") ]}
+    {[ badgeClass = "uig-badge--design" /]}
+    {[ badgeTitle = "No reusable code available." /]}
+    {[ badgeText = "Design Only" /]}
+{[ else ]}
+    {[ badgeClass = "uig-badge--pending" /]}
+    {[ badgeTitle = "Guideline has not been finalized." /]}
+    {[ badgeText = "Pending" /]}
+{[/]}
 <span class="uig-badge {{ badgeClass }}" title="{{ badgeTitle }}">{{ badgeText }}</span>
 
 
