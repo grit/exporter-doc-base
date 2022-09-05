@@ -13,13 +13,13 @@
   text-transform: uppercase;
 }
 
-.uig-badge__pending {
+.uig-badge--pending {
   background-color: #777;
 }
-.uig-badge__design {
+.uig-badge--design {
   background-color: #00a1ff;
 }
-.uig-badge__jira {
+.uig-badge--jira {
   background-color: #4A6785;
 
   &:hover,
@@ -28,15 +28,15 @@
     text-decoration: none;
   }
 }
-.uig-badge__available {
+.uig-badge--available {
   background-color: #009E87;
 }
-.uig-badge__implemented {
+.uig-badge--implemented {
   background-color: #003791;
 }
-.uig-badge__standard {
+.uig-badge--standard {
   background-color: #363636;
 }
-.uig-badge__required {
+.uig-badge--required {
   background-color: #D99C34;
 }
