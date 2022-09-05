@@ -4,23 +4,34 @@
 {[ let variant = block.variantKey /]}
 {[ let url = block.properties.url /]}
 {[ let badgeClass = "" /]}
-{[ let badgeTitle = "" /]}
 {[ let badgeText = "" /]}
 
 {[ if (variant === "pending") ]}
     {[ badgeClass = "uig-badge--pending" /]}
-    {[ badgeTitle = "Guideline has not been finalized." /]}
     {[ badgeText = "Pending" /]}
 {[ elseif (variant === "design") ]}
     {[ badgeClass = "uig-badge--design" /]}
-    {[ badgeTitle = "No reusable code available." /]}
     {[ badgeText = "Design Only" /]}
+{[ elseif (variant === "jira") ]}
+    {[ badgeClass = "uig-badge--jira" /]}
+    {[ badgeText = "See JIRA" /]}
+{[ elseif (variant === "avairable") ]}
+    {[ badgeClass = "uig-badge--avairable" /]}
+    {[ badgeText = "Now Available" /]}
+{[ elseif (variant === "implemented") ]}
+    {[ badgeClass = "uig-badge--implemented" /]}
+    {[ badgeText = "Implemented" /]}
+{[ elseif (variant === "standard") ]}
+    {[ badgeClass = "uig-badge--standard" /]}
+    {[ badgeText = "Standard" /]}
+{[ elseif (variant === "required") ]}
+    {[ badgeClass = "uig-badge--required" /]}
+    {[ badgeText = "Required" /]}
 {[ else ]}
     {[ badgeClass = "uig-badge--pending" /]}
-    {[ badgeTitle = "Guideline has not been finalized." /]}
     {[ badgeText = "Pending" /]}
 {[/]}
-<span class="uig-badge {{ badgeClass }}" title="{{ badgeTitle }}">{{ badgeText }}</span>
+<span class="uig-badge {{ badgeClass }}">{{ url }}</span>
 
 
 
