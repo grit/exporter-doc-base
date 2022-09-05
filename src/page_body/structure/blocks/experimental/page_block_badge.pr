@@ -31,7 +31,9 @@
     {[ badgeClass = "uig-badge--pending" /]}
     {[ badgeText = "Pending" /]}
 {[/]}
-<span class="uig-badge {{ badgeClass }}">{{ url }}</span>
 
-
-
+{[ if (url !== "") ]}
+    <a href="{{ url }}" class="uig-badge {{ badgeClass }}" target="_blank">{{ badgeText }}</a>
+{[ else ]}
+    <span class="uig-badge {{ badgeClass }}">{{ badgeText }}</span>
+{[/]}

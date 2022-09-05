@@ -429,7 +429,7 @@
           {
             "key": "url",
             "type": "string",
-            "default": "Link URL",
+            "default": "",
             "label": "URL"
           }
         ]
