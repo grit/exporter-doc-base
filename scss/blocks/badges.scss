@@ -3,7 +3,7 @@
 /* =================================== */
 .uig-badge {
   display: inline-block;
-  padding: 1rem .625rem;
+  padding: .625rem 1rem;
   font-weight: 600;
   line-height: 1;
   white-space: nowrap;
@@ -28,7 +28,7 @@
     text-decoration: none;
   }
 }
-.uig-badge--available {
+.uig-badge--avairable {
   background-color: #009E87;
 }
 .uig-badge--implemented {
