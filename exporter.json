@@ -640,7 +640,7 @@
           "key": "boxed"
         }
       ],
-      "uig.badge": [
+      "Custom": [
         {
           "name": "Pending",
           "key": "pending",
