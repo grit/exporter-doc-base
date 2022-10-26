@@ -30,7 +30,7 @@
     {[/]}
 
     {[ if shortcut.previewUrl ]}
-    <div class="preview" style="background: url({{ shortcut.previewUrl }});background-size: cover;background-position: center;"></div>
+    <div class="preview" style="background-image: url({{ shortcut.previewUrl }});"></div>
     {[ else ]}
     <div class="preview empty"></div>
     {[/]}
