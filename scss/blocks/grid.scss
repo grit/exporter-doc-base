@@ -3,7 +3,6 @@
 /* =================================== */
 .row {
   /* Variables */
-  --grid-gap:1.75rem;
   --grid-col1: calc((100% - (var(--grid-gap) * 11)) / 12);
   --grid-col2: calc((100% - (var(--grid-gap) * 11)) / 12 * 2 + var(--grid-gap));
   --grid-col3: calc((100% - (var(--grid-gap) * 11)) / 12 * 3 + 2 * var(--grid-gap));

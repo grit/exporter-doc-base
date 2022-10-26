@@ -32,7 +32,7 @@
   --borderRadiusLarge: 6px;
   --transitionDefault: 200ms all ease-in-out;
   --boxShadowLevel0: 0px 0px 0px 1px var(--colorBackgroundPrimary);
-  --boxShadowLevel1: 0px 4px 8px rgba(0, 0, 0, 0.05),
+  --boxShadowLevel1: 0px 4px 8px rgba(0, 0, 0, 0.08),
     0px 0px 0px 1px var(--colorBackgroundSecondary);
   --boxShadowLevel2: 0 4px 8px 0 rgb(0, 0, 0, 0.08),
     0px 0px 0px 1px var(--colorBorderColorSubtle);
@@ -135,4 +135,7 @@
   --calloutInfoInk: var(--colorInkPrimary);
   --calloutInfoInkSecondary: var(--colorInkSecondary);
   --calloutInfoBackground: var(--colorBackgroundAlt);
+
+  /* Grid */
+  --grid-gap: 1.75rem;
 }
