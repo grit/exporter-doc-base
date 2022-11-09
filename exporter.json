@@ -1,9 +1,9 @@
 {
   "id": "io.supernova.documentation-main",
-  "name": "Nebula Documentation",
-  "description": "Default exporter for documentation site", 
-  "author": "Supernova",
-  "organization": "Supernova",
+  "name": "PlayStation UI Guidelines",
+  "description": "Default exporter for UIG",
+  "author": "PlayStation",
+  "organization": "PlayStation",
   "source_dir": "src",
   "assets_dir": "assets",
   "version": "4.0.1",
