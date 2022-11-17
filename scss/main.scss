@@ -103,9 +103,13 @@
 @import "_playstation/components/typography";
 
 /*  Modules */
-@import "scss/_playstation/modules/content";
+@import "_playstation/modules/top-navigation";
+@import "_playstation/modules/content";
 @import "_playstation/modules/side-navigation";
 @import "_playstation/modules/content-nav";
+@import "_playstation/modules/footer";
 
-/* Block */
-//@import "_playstation/blocks/table";
+/*  Blocks */
+@import "_playstation/blocks/grid";
+@import "_playstation/blocks/badges";
+@import "_playstation/blocks/table";
