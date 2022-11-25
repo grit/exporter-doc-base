@@ -77,7 +77,7 @@
     </div>
 
   {[ elseif (variant === "gallery") ]}
-    {[ inject "ps_uig_page_block_gallery" context block /]}
+    {[ inject "ps_uig_page_block_gallery" context {"block": block, "pageId": pageId} /]}
 
   {[ else ]}
     {* Default variant - tabs with header row and content below it *}
