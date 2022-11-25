@@ -4,7 +4,7 @@
 {[ let blockId = block.id.prefixed("T") /]}
 
 <div class="uig-gallery">
-  <div class="uig-gallery__thumb" id="{{ blockId }}" role="tablist" aria-orientation="vertical">
+  <div class="nav uig-gallery__thumb" id="{{ blockId }}" role="tablist" aria-orientation="vertical">
     {[ map (block.children.enumerated()) to index tab ]}
       {[ let id = tab.id.prefixed("T") /]}
       {[ if (tab.type === "TabItem") ]}
