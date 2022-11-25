@@ -736,6 +736,10 @@
           "key": "columns"
         },
         {
+          "name": "Gallery",
+          "key": "gallery"
+        },
+        {
           "name": "Accordion",
           "key": "accordion"
         }
