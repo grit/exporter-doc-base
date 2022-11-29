@@ -14,8 +14,6 @@ export default function gallery() {
         }else {
           thumbnails[index].prepend(index + 1);
         }
-
-        console.log(thumbnails[index]);
       });
     });
   }

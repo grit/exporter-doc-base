@@ -19,13 +19,17 @@
   }
 
   & > a {
-    @apply grid place-items-center p-0 aspect-video text-default bg-[var(--galleryThumbBg)];
+    @apply flex items-center justify-center p-0 aspect-video text-default bg-[var(--galleryThumbBg)];
 
     &:hover:not(.active) {
       @apply opacity-8;
     }
     &.active {
       outline: 3px solid var(--colorAccent);
+    }
+
+    img {
+      @apply w-full h-full object-cover;
     }
   }
 }
