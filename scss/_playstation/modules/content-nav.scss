@@ -3,6 +3,11 @@
 /* =================================== */
 #content-nav-container {
   @apply block xl:w-[300px] xl:pl-[40px] xl:shrink-0;
+
+  /* Home */
+  .is-homepage & {
+    @apply hidden;
+  }
 }
 
 #content-nav {

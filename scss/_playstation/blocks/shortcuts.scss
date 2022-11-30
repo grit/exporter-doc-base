@@ -53,10 +53,18 @@
   }
 
   // Image on top – image sizes
-  &.variant-image-top-3 div.preview,
-  &.variant-image-top-2 div.preview,
-  &.variant-image-top-1 div.preview {
-    @apply h-auto aspect-video;
+  &.variant-image-top-3,
+  &.variant-image-top-2,
+  &.variant-image-top-1 {
+    .shortcut-item {
+      @apply shadow-none;
+    }
+    div.preview {
+      @apply h-auto aspect-video;
+    }
+    .content {
+      @apply px-0;
+    }
   }
 
   // Leading icon
