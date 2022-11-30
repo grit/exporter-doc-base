@@ -17,7 +17,6 @@
   },
   "devDependencies": {
     "@types/showdown": "^2.0.0",
-    "babel-loader": "^9.1.0",
     "css-loader": "^6.7.1",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.6.1",

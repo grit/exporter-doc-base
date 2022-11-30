@@ -9,6 +9,10 @@ img {
   td & {
     @apply w-[calc(100%+1rem)] my-0 mx-[-.5rem];
   }
+
+  *:last-child {
+    @apply mb-0;
+  }
 }
 
 .caption {

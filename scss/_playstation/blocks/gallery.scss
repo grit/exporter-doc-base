@@ -1,0 +1,51 @@
+/* =================================== */
+/*  Gallery
+/* =================================== */
+.uig-gallery {
+  --galleryThumbBg: #d7d7d7;
+  --galleryimageBg: #d7d7d7;
+
+  @apply grid gap-[10px] mb-xl;
+  @screen md {
+    grid-template-columns: 120px 1fr;
+  }
+}
+
+.uig-gallery__thumb {
+  @apply grid gap-[10px];
+  grid-template-columns: repeat(auto-fill, minmax(103px, 1fr));
+  @screen md {
+    grid-template-rows: repeat(auto-fill, calc(120px / 16 * 9));
+  }
+
+  & > a {
+    @apply flex items-center justify-center p-0 aspect-video text-default bg-[var(--galleryThumbBg)];
+
+    &:hover:not(.active) {
+      @apply opacity-8;
+    }
+    &.active {
+      outline: 3px solid var(--colorAccent);
+    }
+
+    img {
+      @apply w-full h-full object-cover;
+    }
+  }
+}
+
+.uig-gallery__container {
+
+}
+
+.uig-gallery__image {
+  .content-block--image {
+    & > a {
+      @apply bg-[var(--galleryimageBg)] aspect-video;
+
+      img {
+        @apply w-full h-full object-contain;
+      }
+    }
+  }
+}
