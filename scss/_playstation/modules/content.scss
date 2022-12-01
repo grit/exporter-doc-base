@@ -20,7 +20,7 @@
 
   /* Home */
   .is-homepage & {
-    @apply relative w-full;
+    @apply relative w-full max-w-[var(--contentMaxWidth)];
   }
 }
 
