@@ -17,9 +17,29 @@
   grid-row-gap: var(--grid-gap);
 
   .shortcut-item {
+    @apply flex flex-col;
+    box-shadow: none;
+
+    .content {
+      flex-grow: 1;
+      border-right: 1px solid var(--colorBorderSubtle);
+      border-bottom: 1px solid var(--colorBorderSubtle);
+      border-left: 1px solid var(--colorBorderSubtle);
+    }
+
+    div.preview {
+      @apply h-auto aspect-square;
+    }
+
     &:hover {
+      box-shadow: none;
+
+      div.preview {
+        @apply opacity-80;
+      }
+
       p.title {
-        @apply text-link underline;
+        @apply text-default underline;
       }
     }
   }
@@ -27,14 +47,6 @@
 
 /* Shortcut variants */
 .content-block--shortcuts {
-  
-  // 3 columns
-  &.variant-image-top-3,
-  &.variant-icon-top-3,
-  &.variant-icon-leading-3 {
-    grid-column-gap: var(--grid-gap);
-    grid-row-gap: var(--grid-gap);
-  }
 
   // 1 column
   &.variant-icon-leading-1,
@@ -43,7 +55,7 @@
     grid-row-gap: var(--grid-gap);
   }
 
-  // Image on top – 2 columns
+  // 2 columns
   &.variant-image-top-2,
   &.variant-icon-top-2,
   &.variant-icon-leading-2,
@@ -52,33 +64,42 @@
     grid-row-gap: var(--grid-gap);
   }
 
-  // Image on top – image sizes
+  // 3 columns
   &.variant-image-top-3,
-  &.variant-image-top-2,
-  &.variant-image-top-1 {
+  &.variant-icon-top-3,
+  &.variant-icon-leading-3 {
+    grid-column-gap: var(--grid-gap);
+    grid-row-gap: var(--grid-gap);
+  }
+
+  // Icon on top
+  &.variant-icon-top-4,
+  &.variant-icon-top-3,
+  &.variant-icon-top-2 {
     .shortcut-item {
-      @apply shadow-none;
-    }
-    div.preview {
-      @apply h-auto aspect-video;
-    }
-    .content {
-      @apply px-0;
+      box-shadow: 0 0 1px 1px var(--colorBorderSubtle);
+
+      .content {
+        border: none;
+      }
     }
   }
 
   // Leading icon
-  &.variant-icon-leading-1 .shortcut-item,
-  &.variant-icon-leading-2 .shortcut-item,
-  &.variant-icon-leading-3 .shortcut-item {
-    .content {
-      justify-content: flex-start;
-    }
+  &.variant-icon-leading-1,
+  &.variant-icon-leading-2,
+  &.variant-icon-leading-3 {
+    .shortcut-item {
+      box-shadow: 0 0 1px 1px var(--colorBorderSubtle);
 
-    div.preview,
-    div.preview,
-    div.preview {
-      margin-right: 0;
+      .content {
+        justify-content: flex-start;
+        border: none;
+      }
+
+      div.preview {
+        margin-right: 0;
+      }
     }
   }
 
@@ -88,6 +109,13 @@
     div.preview {
       flex-shrink: 0;
       min-height: 100px;
+    }
+
+    .content {
+      border-top: 1px solid var(--colorBorderSubtle);
+      border-right: 1px solid var(--colorBorderSubtle);
+      border-bottom: 1px solid var(--colorBorderSubtle);
+      border-left: none;
     }
   }
 }
