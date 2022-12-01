@@ -15,6 +15,32 @@
 .content-block--shortcuts {
   grid-column-gap: var(--grid-gap);
   grid-row-gap: var(--grid-gap);
+  grid-template-columns: repeat(2, 1fr);
+
+  @screen lg {
+    grid-template-columns: repeat(4, 1fr)
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  // 1 column
+  &.variant-image-top-1 {
+    grid-row-gap: var(--grid-gap);
+  }
+
+  // 2 columns
+  &.variant-image-top-2 {
+    grid-column-gap: var(--grid-gap);
+    grid-row-gap: var(--grid-gap);
+  }
+
+  // 3 columns
+  &.variant-image-top-3 {
+    grid-column-gap: var(--grid-gap);
+    grid-row-gap: var(--grid-gap);
+  }
 
   .shortcut-item {
     @apply flex flex-col;
@@ -47,33 +73,8 @@
 
 /* Shortcut variants */
 .content-block--shortcuts {
-
-  // 1 column
-  &.variant-icon-leading-1,
-  &.variant-image-leading-1,
-  &.variant-image-top-1 {
-    grid-row-gap: var(--grid-gap);
-  }
-
-  // 2 columns
-  &.variant-image-top-2,
-  &.variant-icon-top-2,
-  &.variant-icon-leading-2,
-  &.variant-image-leading-2 {
-    grid-column-gap: var(--grid-gap);
-    grid-row-gap: var(--grid-gap);
-  }
-
-  // 3 columns
-  &.variant-image-top-3,
-  &.variant-icon-top-3,
-  &.variant-icon-leading-3 {
-    grid-column-gap: var(--grid-gap);
-    grid-row-gap: var(--grid-gap);
-  }
-
   // Icon on top
-  &.variant-icon-top-4,
+  /*&.variant-icon-top-4,
   &.variant-icon-top-3,
   &.variant-icon-top-2 {
     .shortcut-item {
@@ -83,10 +84,10 @@
         border: none;
       }
     }
-  }
+  }*/
 
   // Leading icon
-  &.variant-icon-leading-1,
+  /*&.variant-icon-leading-1,
   &.variant-icon-leading-2,
   &.variant-icon-leading-3 {
     .shortcut-item {
@@ -101,10 +102,10 @@
         margin-right: 0;
       }
     }
-  }
+  }*/
 
   // Image leading
-  &.variant-image-leading-1 .shortcut-item,
+  /*&.variant-image-leading-1 .shortcut-item,
   &.variant-image-leading-2 .shortcut-item {
     div.preview {
       flex-shrink: 0;
@@ -117,5 +118,5 @@
       border-bottom: 1px solid var(--colorBorderSubtle);
       border-left: none;
     }
-  }
+  }*/
 }

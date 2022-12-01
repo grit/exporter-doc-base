@@ -26,6 +26,8 @@
 
 /* Title */
 .container-title {
+  border-bottom: none;
+
   & > .slider {
     @apply max-w-[calc(var(--contentMaxWidth)+var(--contentNavWidth))];
     transition: max-width .25s ease;
@@ -37,8 +39,8 @@
 
   /* Home */
   .is-homepage & {
-    @apply mb-[-160px] pb-[100px];
-    @apply sm:mb-[-200px];
+    @apply mb-[-180px] pb-[120px];
+    @apply sm:mb-[-220px];
 
     & > .slider {
       @apply max-w-[var(--contentMaxWidth)] gap-[2.5rem];
