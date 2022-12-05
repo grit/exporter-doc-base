@@ -38,3 +38,11 @@ table {
     }
   }
 }
+
+.data-table-wrapper {
+  p {
+    @apply mb-s;
+    font-size: var(--contentFontBase);
+    line-height: var(--contentBodyLineHeight);
+  }
+}
