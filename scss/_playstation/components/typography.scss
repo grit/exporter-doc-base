@@ -116,7 +116,7 @@ button:focus-visible {
   outline: var(--color-link) solid 2px;
 }
 
-a[href^=https]:not(.popup-img) {
+a[href^=http]:not(.popup-img) {
   &:after {
     font-family: FontAwesome;
     content: "\f08e";

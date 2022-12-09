@@ -9,6 +9,9 @@
     {* Documentation styling *}
     {[ inject "page_head_styles" context page /]}
 
+    {* Injection point - Custom JavaScript *}
+    {[ inject "ps_uig_custom_js" context data /]}
+
     {* Injection point - inject head *}
     {{ configuration.advancedCustomizationCustomHeadInject }}
 </head>
