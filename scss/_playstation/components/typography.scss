@@ -77,22 +77,6 @@ h5,
   --headingFontSize: 1.1rem;
 }
 
-.docs-content {
-  section {
-    ul {
-      li {
-        @apply pl-0 mt-xs;
-      }
-    }
-
-    ol {
-      li {
-        @apply pl-0 mt-xs;
-      }
-    }
-  }
-}
-
 mark,
 .mark {
   font-family: inherit;
