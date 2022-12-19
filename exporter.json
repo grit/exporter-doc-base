@@ -760,6 +760,12 @@
           "thumbnail": "thumbnails/Tabs_Columns.png"
         },
         {
+          "name": "Col-2",
+          "key": "col2",
+          "description": "Fix the first column at 2/12.",
+          "thumbnail": "thumbnails/Tabs_Columns2.png"
+        },
+        {
           "name": "Gallery",
           "key": "gallery",
           "description": "Tabs displayed Image Gallery.",

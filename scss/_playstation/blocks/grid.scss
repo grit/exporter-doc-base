@@ -19,6 +19,10 @@
 
   & > * {
     @apply w-full px-0;
+
+    & > * {
+      @apply last:mb-0;
+    }
   }
 }
 
