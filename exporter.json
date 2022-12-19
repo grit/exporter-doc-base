@@ -763,7 +763,7 @@
           "name": "Gallery",
           "key": "gallery",
           "description": "Tabs displayed Image Gallery.",
-          "thumbnail": "thumbnails/Tabs_Pills.png"
+          "thumbnail": "thumbnails/Tabs_Gallery.png"
         },
         {
           "name": "Pills",
