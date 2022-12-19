@@ -2,10 +2,10 @@
 {[ let block = context.block /]}
 {[ let pageId = context.pageId /]}
 {[ let blockId = block.id.prefixed("T") /]}
+{[ let tabIndex = 0 /]}
 
 <div class="row tabs-as-columns">
   {[ map (block.children.enumerated()) to index tab ]}
-    {[ let tabIndex = 0 /]}
     {[ let id = tab.id.prefixed("T") /]}
     {[ if (tabIndex === 0) ]}
       <div class="col-2">
