@@ -1027,6 +1027,25 @@
           "key": "frame"
         }
       ],
+      "Heading": [
+        {
+          "name": "Default",
+          "key": "default",
+          "isDefault": true
+        },
+        {
+          "name": "Heading 4",
+          "key": "heading4"
+        },
+        {
+          "name": "Heading 5",
+          "key": "heading5"
+        },
+        {
+          "name": "Heading 6",
+          "key": "heading6"
+        }
+      ],
       "uig.badge": [
         {
           "name": "Pending",
