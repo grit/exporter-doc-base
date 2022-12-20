@@ -100,7 +100,7 @@ button:focus-visible {
   outline: var(--color-link) solid 2px;
 }
 
-a[href^=http]:not(.popup-img) {
+a[target="_blank"] {
   &:after {
     font-family: FontAwesome;
     content: "\f08e";
@@ -151,4 +151,7 @@ ul {
 pre,
 .table {
   @apply mb-m;
+}
+pre {
+  max-height: none;
 }
