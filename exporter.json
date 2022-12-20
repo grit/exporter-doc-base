@@ -766,6 +766,18 @@
           "thumbnail": "thumbnails/Tabs_Columns2.png"
         },
         {
+          "name": "Col-6",
+          "key": "col6",
+          "description": "Fix the first column at 6/12.",
+          "thumbnail": "thumbnails/Tabs_Columns6.png"
+        },
+        {
+          "name": "Col-9",
+          "key": "col9",
+          "description": "Fix the first column at 9/12.",
+          "thumbnail": "thumbnails/Tabs_Columns9.png"
+        },
+        {
           "name": "Gallery",
           "key": "gallery",
           "description": "Tabs displayed Image Gallery.",
