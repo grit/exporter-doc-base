@@ -15,10 +15,14 @@
   --grid-col10: calc((100% - (var(--grid-gap) * 11)) / 12 * 10 + 9 * var(--grid-gap));
   --grid-col11: calc((100% - (var(--grid-gap) * 11)) / 12 * 11 + 10 * var(--grid-gap));
 
-  @apply mx-0 mb-l gap-[var(--grid-gap)];
+  @apply justify-center mx-0 mb-l gap-[var(--grid-gap)];
 
   & > * {
     @apply w-full px-0;
+
+    & > * {
+      @apply last:mb-0;
+    }
   }
 }
 

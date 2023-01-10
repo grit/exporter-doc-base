@@ -36,7 +36,10 @@
 @import './components/badge';
 @import './components/button';
 @import './components/content-block';
+@import './components/icon-boolean';
 @import './components/preloader';
+@import './components/property-link';
+@import './components/property-select-tag';
 @import './components/typography';
 @import './components/tiles';
 @import './components/tooltip';
@@ -103,6 +106,7 @@
 /* Foundation */
 @import "_playstation/inc/theme";
 @import "_playstation/components/typography";
+@import "_playstation/components/list";
 
 /*  Modules */
 @import "_playstation/modules/top-navigation";

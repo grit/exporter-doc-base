@@ -1,0 +1,25 @@
+{* Custom Tab Block for Column9 *}
+{[ let block = context.block /]}
+{[ let pageId = context.pageId /]}
+{[ let blockId = block.id.prefixed("T") /]}
+{[ let tabIndex = 0 /]}
+
+<div class="row tabs-as-columns">
+  {[ map (block.children.enumerated()) to index tab ]}
+    {[ let id = tab.id.prefixed("T") /]}
+    {[ if (tabIndex === 0) ]}
+      <div class="col-sm-9">
+        {[ for child in tab.children ]}
+        {[ inject "page_body_structure_block" context ({"block": child, "pageId": pageId}) /]}
+        {[/]}
+      </div>
+    {[ else ]}
+      <div class="col">
+        {[ for child in tab.children ]}
+        {[ inject "page_body_structure_block" context ({"block": child, "pageId": pageId}) /]}
+        {[/]}
+      </div>
+    {[/]}
+    {[ tabIndex = (tabIndex + 1) /]}
+  {[/]}
+</div>

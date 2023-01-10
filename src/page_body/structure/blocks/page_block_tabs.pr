@@ -76,6 +76,15 @@
       {[/]}
     </div>
 
+  {[ elseif (variant === "col2") ]}
+    {[ inject "ps_uig_page_block_col2" context {"block": block, "pageId": pageId} /]}
+
+  {[ elseif (variant === "col6") ]}
+    {[ inject "ps_uig_page_block_col6" context {"block": block, "pageId": pageId} /]}
+
+  {[ elseif (variant === "col9") ]}
+    {[ inject "ps_uig_page_block_col9" context {"block": block, "pageId": pageId} /]}
+
   {[ elseif (variant === "gallery") ]}
     {[ inject "ps_uig_page_block_gallery" context {"block": block, "pageId": pageId} /]}
 

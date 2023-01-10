@@ -77,22 +77,6 @@ h5,
   --headingFontSize: 1.1rem;
 }
 
-.docs-content {
-  section {
-    ul {
-      li {
-        @apply pl-0 mt-xs;
-      }
-    }
-
-    ol {
-      li {
-        @apply pl-0 mt-xs;
-      }
-    }
-  }
-}
-
 mark,
 .mark {
   font-family: inherit;
@@ -116,7 +100,7 @@ button:focus-visible {
   outline: var(--color-link) solid 2px;
 }
 
-a[href^=http]:not(.popup-img) {
+a[target="_blank"] {
   &:after {
     font-family: FontAwesome;
     content: "\f08e";
@@ -167,4 +151,7 @@ ul {
 pre,
 .table {
   @apply mb-m;
+}
+pre {
+  max-height: none;
 }
