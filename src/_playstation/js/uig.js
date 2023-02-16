@@ -17,7 +17,3 @@ const luminousOptions = {
 if( luminousTrigger !== null ) {
   new LuminousGallery(luminousTrigger,{},luminousOptions);
 }
-
-// Design System Switcher
-// import Switcher from './bundle/switcher';
-// Switcher();
