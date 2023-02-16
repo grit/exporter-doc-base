@@ -19,5 +19,5 @@ if( luminousTrigger !== null ) {
 }
 
 // Design System Switcher
-import Switcher from './bundle/switcher';
-Switcher();
+// import Switcher from './bundle/switcher';
+// Switcher();

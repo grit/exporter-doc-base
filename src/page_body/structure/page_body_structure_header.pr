@@ -20,7 +20,8 @@
                 {[ let dsSwitcher = ds.currentDesignSystemSwitcher() /]}
 
                 <div id="design-systems-switcher" class="dropdown">
-                    <button class="btn-icon-button" id="design-systems-switcher" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+                    <button class="btn-icon-button" id="design-systems-switcher" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        {[ inject "component_design_system_name" context page /]}
                         {[ inject "icon_selector" context configuration /]}
                     </button>
                     <div class="dropdown-menu pull-left" aria-labelledby="design-systems-switcher">
