@@ -9,10 +9,7 @@
 
 /* Logo */
 .site-logo {
-  @apply block order-[-1];
-}
-.logo-wrapper {
-  @apply px-[10px] pb-[3px];
+  @apply block order-[-1] pb-[3px];
 }
 
 /* Hamburger Menu Button */
@@ -26,4 +23,38 @@
 /* Search */
 .utility-nav {
   @apply pr-0;
+}
+
+/* Design System Switcher */
+.logo-wrapper {
+  @apply px-[10px] pb-0 w-auto max-w-none gap-[16px];
+
+  .dropdown {
+    @apply flex items-center h-full pl-[10px];
+    border-left: 1px solid #444;
+  }
+
+  .btn-icon-button {
+    @apply w-auto text-[85%] gap-[4px];
+
+    .switch-name {
+      @apply hidden md:block;
+    }
+  }
+
+  .dropdown-menu {
+    @apply mt-0 bg-black shadow-none overflow-y-auto;
+
+    .dropdown-item {
+      @apply text-[85%] text-white;
+
+      &:hover {
+        @apply bg-[var(--topNavItemHoverBackground)];
+      }
+
+      &.is-active {
+        @apply text-primary pointer-events-none;
+      }
+    }
+  }
 }
