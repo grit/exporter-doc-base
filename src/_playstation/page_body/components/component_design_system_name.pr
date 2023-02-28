@@ -1,0 +1,3 @@
+{[ let designSystem = ds.documentationConfiguration().version.designSystem /]}
+
+<span class="design-system-name">{{ designSystem.name }}</span>
