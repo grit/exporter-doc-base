@@ -1,0 +1,31 @@
+{[ const frame = context.frame /]}
+
+{* Decide on properties *}
+{[ let backgroundColor = "transparent" /]}
+{[ let showChecker = true /]}
+{[ if (frame.backgroundColor && frame.backgroundColor.value) ]}
+    {* Only raw values are currently supported, tokens soon *}
+    {[ backgroundColor = frame.backgroundColor.value /]}
+    {[ showChecker = false /]}
+{[/]}
+
+<div class="tile-item frame-item{{ !context.showTitles ? "titleless" : "" }}">      
+    <div class="preview frame {{ showChecker ? "checkered-background-light" : ""}}" style="background-color: {{ backgroundColor }}">
+    {[ if frame.previewUrl ]}
+        <a class="popup-img" href="{{ frame.previewUrl }}">
+            <img src="{{ frame.previewUrl }}" alt="{{ frame.title }}" height="{{ frame.origin.height }}" width="{{ frame.origin.width }}" />
+        </a>
+    {[/]}
+    
+    </div>
+    {[ if (context.showTitles && frame.title) ]}
+        <div class="meta">
+        {[ if frame.title ]}
+            <p class="title">{{ withHTMLNewlines(frame.title) }}</p>
+        {[/]}
+        {[ if frame.description ]}
+            <p class="description">{{ withHTMLNewlines(frame.description) }}</p>    
+        {[/]}
+        </div>
+    {[/]}
+</div>
