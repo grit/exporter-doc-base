@@ -8,6 +8,7 @@ gallery();
 
 // Luminous(Lightbox) plugin
 import LuminousGallery from "./bundle/luminous/LuminousGallery";
+import Luminous from "./bundle/luminous/Luminous";
 const luminousTrigger = document.querySelectorAll('.popup-img');
 const luminousOptions = {
   caption: function (trigger) {
@@ -15,5 +16,9 @@ const luminousOptions = {
   },
 }
 if( luminousTrigger !== null ) {
-  new LuminousGallery(luminousTrigger,{},luminousOptions);
+  if(luminousTrigger.length > 1) {
+    new LuminousGallery(luminousTrigger,{}, luminousOptions);
+  }else {
+    new Luminous(luminousTrigger[0], luminousOptions);
+  }
 }
