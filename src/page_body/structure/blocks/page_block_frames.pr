@@ -9,7 +9,8 @@
 <div class="content-block content-block--frames layout-tiles{{ getVariantClass(variant) }}{{ forceNaturalHeight ? " force-natural-height" : "" }}">
   <div class="grid {{ (block.properties && block.properties.layout) ? block.properties.layout.lowercased() : "c4" }}">
     {[ for frame in block.frames ]}
-     {[ inject "page_block_frame" context { "frame": frame, "showTitles": block.properties.showTitles } /]}
+     {* [ inject "page_block_frame" context { "frame": frame, "showTitles": block.properties.showTitles } /] *}
+     {[ inject "ps_uig_page_block_frame" context { "frame": frame, "showTitles": block.properties.showTitles } /]}
     {[/]}
   </div>
 </div>
