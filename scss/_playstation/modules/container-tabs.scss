@@ -1,0 +1,7 @@
+.container-tabs {
+  > .tabbed-navigation {
+    .js-navbar-close & {
+      @apply max-w-none;
+    }
+  }
+}
