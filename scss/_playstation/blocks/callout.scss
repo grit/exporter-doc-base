@@ -37,3 +37,13 @@
     }
   }
 }
+
+.tabs-as-columns.do.dont {
+  .col-sm {
+    @apply flex flex-col;
+
+    & > .content-block--image:last-child {
+      @apply mt-auto;
+    }
+  }
+}
