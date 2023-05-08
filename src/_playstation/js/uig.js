@@ -22,3 +22,7 @@ if( luminousTrigger !== null ) {
     new Luminous(luminousTrigger[0], luminousOptions);
   }
 }
+
+// Do/Don't
+import doDont from "./bundle/doDont";
+doDont();

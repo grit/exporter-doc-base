@@ -2,7 +2,7 @@
 /*  side-navigation
 /* =================================== */
 .side-navigation-wrapper {
-  @apply block relative border-none -ml-[var(--sideNavWidth)];
+  @apply block relative z-[21] border-none -ml-[var(--sideNavWidth)];
   @apply lg:ml-0;
   transition: margin-left .25s ease, transform .25s ease;
 

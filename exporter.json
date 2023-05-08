@@ -6,7 +6,7 @@
   "organization": "PlayStation",
   "source_dir": "src",
   "assets_dir": "assets",
-  "version": "4.5.1",
+  "version": "4.5.3",
   "usesBrands": false,
   "config": {
     "sources": "sources.json",
@@ -187,7 +187,6 @@
         "category": "Top navigation",
         "default": false
       },
-
       {
         "key": "advancedCustomizationShowCTA",
         "type": "boolean",
@@ -827,7 +826,6 @@
           "description": "Tabs displayed as an accordion.",
           "thumbnail": "thumbnails/Tabs_Accordion.png"
         }
-
       ],
       "TokenList": [
         {
