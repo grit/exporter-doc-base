@@ -13,6 +13,8 @@ declare global {
     registerFunction(name: string, fn: (...args) => any)
     registerTransformer(name: string, fn: (transformedValue: any, ...args) => any)
     registerPayload(name: string, payload: string | number | object | Array<any> | Object)
+    systemData(): object
+    blueprintData(): object | null
   }
 
   const Pulsar: PulsarInterface
@@ -30,7 +32,7 @@ declare global {
 
   type TextDecoration = "None" | "Underline" | "Strikethrough"
 
-  type Unit = "Pixels" | "Points" | "Percent" | "Ems"
+  type Unit = "Pixels" | "Points" | "Percent" | "Ems" | "Rem" | "Ms" | "Raw"
 
   type BorderPosition = "Inside" | "Center" | "Outside"
 
