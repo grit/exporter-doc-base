@@ -22,18 +22,15 @@ table {
   }
 
   &.header-row {
-    tr:first-child {
+    thead {
       th {
-        background-color: transparent;
         border-bottom: 2px solid #d7d7d7;
       }
     }
   }
 
   &.header-column {
-    td:first-child,
-    td:first-child {
-      background-color: transparent;
+    th:first-child {
       border-right: 2px solid #d7d7d7;
     }
   }
