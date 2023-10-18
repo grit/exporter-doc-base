@@ -1,0 +1,15 @@
+{* Fetch block from injection context, expected type 'Text' *}
+{[ const block = context /]}
+
+{* Generate rich text *}
+{[ if (blueprintData.locale === "jp") ]}
+{[ let locData = ds.kvsData("localization") /]}    
+{[ let translatedText = lookupTranslatedText(locData, "jp", block) /]}
+    {[ if (translatedText !== null) ]}
+        {{ translatedText }}
+    {[ else ]}
+        {[ inject "page_block_rich_text" context block.text /]}
+    {[/]}
+{[ else ]}
+    {[ inject "page_block_rich_text" context block.text /]}
+{[/]}

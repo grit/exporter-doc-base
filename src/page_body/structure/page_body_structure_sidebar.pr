@@ -56,13 +56,13 @@
                 {[ let isGroupOpen = (isRootForTab && hasFirstLevelFlat && (item.groupBehavior !== "Tabs")) /]}
                 
                 {[ if item.type.equals("Page") ]}
-                    <li class="nav-item{{ isTab === true ? " is-tab" : "" }}"><a class="nav-link{{ activeClass }}" href="{{ pageUrl(item, ds.documentationDomain()) }}">{{ itemTitle }}</a></li>
+                    <li class="nav-item{{ isTab === true ? " is-tab" : "" }}"><a class="nav-link{{ activeClass }}" href="{{ pageUrl(item, (ds.documentationDomain() + "/" + blueprintData.locale)) }}">{{ itemTitle }}</a></li>
                 {[ else ]}
                     <li class="nav-item{{ (isGroupOpen ? " group-open"  : "") }}">
                     {[ let firstDescendingPage = firstPageFromTop(item) /]}
                     {* Group will either link to the first page, or be fully disabled *}
                     {[ if firstDescendingPage ]}
-                        <a class="nav-link{{ (showTabsInNavigation ? " group"  : "") }}{{ activeClass }}" href="{{ pageUrl(firstDescendingPage, ds.documentationDomain()) }}">
+                        <a class="nav-link{{ (showTabsInNavigation ? " group"  : "") }}{{ activeClass }}" href="{{ pageUrl(firstDescendingPage, (ds.documentationDomain() + "/" + blueprintData.locale)) }}">
                             {{ itemTitle }}
                             {[ if showTabsInNavigation ]}<span class="icon">{[ inject "icon_chevron_right" context configuration /]}</span>{[/]}
                         </a>

@@ -15,7 +15,7 @@
         {[ if previousPage ]}
         {[ let group = previousPage.parent /]}
         <div class="{{ nextPage ? "col" : "col-6" }} left">
-            <a class="segment" href="{{ pageUrl(previousPage, ds.documentationDomain()) }}">
+            <a class="segment" href="{{ pageUrl(previousPage, (ds.documentationDomain() + "/" + blueprintData.locale)) }}">
                 <div class="arrow">
                     {[ inject "icon_arrow_left" context configuration /]}
                 </div>
@@ -35,7 +35,7 @@
         {[ if nextPage ]}
         {[ let group = nextPage.parent /]}
         <div class="{{ previousPage ? "col" : "offset-md-6 col-6" }} right">
-            <a href="{{ pageUrl(nextPage, ds.documentationDomain()) }}" class="segment">
+            <a href="{{ pageUrl(nextPage, (ds.documentationDomain() + "/" + blueprintData.locale)) }}" class="segment">
                 <div class="segment-text">
                     {[ if (group && !group.isRoot) ]}
                         <div class="section">{{ htmlSafeString(group.title) }}</div>

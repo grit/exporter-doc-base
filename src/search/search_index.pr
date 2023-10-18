@@ -1,4 +1,4 @@
 {[ let pages = ds.allDocumentationPages() /]}
 {[ let groups = ds.allDocumentationGroups() /]}
-{[ let domain = ds.documentationDomain() /]}
+{[ let domain = (ds.documentationDomain() + "/en") /]}
 {{ buildSearchIndexJSON(pages, groups, domain) }}

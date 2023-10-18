@@ -1,2 +1,2 @@
 {[ const page = ds.documentationPageById(pageId) /]}
-{{ pageUrlForFilepath(page, null) }}
+{{ pageUrlForFilepath(page, blueprintData.locale, blueprintData) }}
