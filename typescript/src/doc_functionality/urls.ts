@@ -41,7 +41,8 @@ export function pageUrl(
 
 export function pageUrlForFilepath(
   object: DocumentationPage | DocumentationGroup,
-  prefix: string | undefined
+  prefix: string | undefined,
+  blueprintData: any
 ) {
   let url = pageUrl(object, prefix);
   if (!url.endsWith('.html')) {

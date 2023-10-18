@@ -7,7 +7,7 @@
    {[ let domain = ds.documentationDomain() /]}
    {[ for page in pages ]}
         <url>
-            <loc>{{ pageUrl(page, ds.documentationDomain()) }}</loc>
+            <loc>{{ pageUrl(page, domain) }}</loc>
             <changefreq>weekly</changefreq>
         </url>
    {[/]}
