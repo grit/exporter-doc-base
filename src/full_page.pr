@@ -1,4 +1,3 @@
-
 {* Fetch page detail using pageId invocation context property *}
 {[ let page = ds.documentationPageById(pageId) /]}
 
@@ -15,6 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 {[ inject "page_head" context page /]}
+{[ const domain = ds.documentationDomain() /]}
 
 <body class="{{ pageIdentifier(page) }}{{ isHomepage ? " is-homepage" : "" }}">
 {* <body class="{{ exportConfiguration().defaultVisualMode }}"> *}

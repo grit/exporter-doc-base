@@ -1,6 +1,6 @@
 {[ let configuration = exportConfiguration() /]}
 {[ let topPage = firstPageFromTop(ds.rootDocumentationGroup()) /]}
-{[ let url = pageUrl(topPage, (ds.documentationDomain() + "/" + blueprintData.locale)) /]}
+{[ let url = pageUrl(topPage, ds.documentationDomain()) /]}
 {[ let designSystem = ds.documentationConfiguration().version.designSystem /]}
 
 <!-- Logo -->
