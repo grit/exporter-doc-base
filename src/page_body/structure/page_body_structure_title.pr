@@ -94,7 +94,7 @@
             {[ for tab in group.pages ]}
                 {[ if isExportable(tab) ]}
                 <li class="nav-item" role="presentation">
-                    {[ let url = pageUrl(tab, (ds.documentationDomain() + "/" + blueprintData.locale)) /]}
+                    {[ let url = pageUrl(tab, ds.documentationDomain()) /]}
                     <a class="nav-link {{ page.id === tab.id ? "active" : "" }}" id="tab-{{ tab.id }}" href="{{ url }}" role="tab" aria-selected="{{ page.id === tab.id ? "true" : "false" }}"><span>{{ htmlSafeString(tab.title) }}</span></a>
                 </li>
                 {[/]}
