@@ -204,7 +204,7 @@ export function convertTextCaseToTextTransform(textCase: TextCase): string {
   }
 }
 
-/** Convert subfamily to CSS font weight */
+/** Convert textCase to CSS text transform */
 export function convertSubfamilyToFontWeight(subfamily: string): string {
 
   switch (subfamily.toLowerCase()) {
