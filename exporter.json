@@ -8,6 +8,7 @@
   "assets_dir": "assets",
   "version": "4.7.15",
   "usesBrands": false,
+  "usesLocale": true,
   "config": {
     "sources": "sources.json",
     "output": "output.json",
