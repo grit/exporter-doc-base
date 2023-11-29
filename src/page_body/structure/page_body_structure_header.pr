@@ -2,8 +2,7 @@
 {[ let group = page.parent /]}
 {[ let groupIsTabContainer = (group.groupBehavior === "Tabs") /]}
 {[ let pageConfiguration = (groupIsTabContainer ? group.configuration : page.configuration) /]}
-
-{[ let domain = (ds.documentationDomain() + "/" + blueprintData.locale) /]}
+{[ let domain = ds.documentationDomain() /]}
 {[ let configuration = exportConfiguration() /]}
 {[ let shouldShowTabbar = ds.documentationConfiguration().settings.tabbedNavigation /]}
 {[ let designSystem = ds.documentationConfiguration().version.designSystem /]}
@@ -52,7 +51,7 @@
                                 {[ let activeClass = (pageOrGroupActiveInContext(page, item) === true ? "active" : "") /]}
                                 {[ let itemTitle = resolveMenuLabel(item, rootGroup, configuration.navigationOverrideHomepageLabel) /]}
                             
-                                <li><a class="typographyDocsViewNavigation {{ activeClass }}" href="{{ pageUrl(item, (ds.documentationDomain() + "/" + blueprintData.locale)) }}">{{ itemTitle }}</a></li>
+                                <li><a class="typographyDocsViewNavigation {{ activeClass }}" href="{{ pageUrl(item, ds.documentationDomain()) }}">{{ itemTitle }}</a></li>
                             {[/]}
                         {[/]}
                     {[/]}
@@ -81,7 +80,7 @@
                                 {[ if isExportable(item) ]}
                                     {[ let activeClass = (pageOrGroupActiveInContext(page, item) === true ? "checked" : "") /]}
                                     {[ let itemTitle = resolveMenuLabel(item, rootGroup, configuration.navigationOverrideHomepageLabel) /]}
-                                    <a class="dropdown-item {{ activeClass }}" href="{{ pageUrl(item, (ds.documentationDomain() + "/" + blueprintData.locale)) }}">{{ itemTitle }}</a>
+                                    <a class="dropdown-item {{ activeClass }}" href="{{ pageUrl(item, ds.documentationDomain()) }}">{{ itemTitle }}</a>
                                 {[/]}
                             {[/]}
                         </div>
@@ -97,15 +96,6 @@
                         </div>
                     </div>
                     {[/]}
-
-                    <div id="language-container" class="dropdown">
-                        <a href="{{ pageUrl(page, (ds.documentationDomain() + "/en")) }}"class="btn btn-secondary {{ (blueprintData.locale === "en") ? "active" : "" }}" type="button" id="lang-selector-en">
-                            🇺🇸 EN
-                        </a>
-                        <a href="{{ pageUrl(page, (ds.documentationDomain() + "/jp")) }}" class="btn btn-secondary {{ (blueprintData.locale === "jp") ? "active" : "" }}" type="button" id="lang-selector-en">
-                            🇯🇵 JP
-                        </a>
-                    </div>
                     {[ if (configuration.searchButtonType === "Icon + label") ]}
                         <button class="btn-icon-button btn-search search expanded" aria-label="Search in documentation">
                             {[ inject "icon_search" context configuration /]} Search...

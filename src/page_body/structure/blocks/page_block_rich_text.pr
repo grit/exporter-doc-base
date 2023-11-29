@@ -21,14 +21,14 @@
                     {[ let page = ds.documentationPageById(itemId) /]}
                     {[ if page ]}
                         {[ if isExportable(page) ]}
-                            {[ url = pageUrl(page, (ds.documentationDomain() + "/" + blueprintData.locale)) /]}
+                            {[ url = pageUrl(page, ds.documentationDomain()) /]}
                         {[/]}
                     {[ else ]}
                         {[ let group = ds.documentationGroupById(itemId) /]}
                         {[ if group ]}
                             {[ let firstPage = firstPageFromTop(group) /]}
                             {[ if (firstPage && isExportable(firstPage) && isExportable(group)) ]}
-                                {[ url = pageUrl(firstPage, (ds.documentationDomain() + "/" + blueprintData.locale)) /]}
+                                {[ url = pageUrl(firstPage, ds.documentationDomain()) /]}
                             {[/]}
                         {[/]}
                     {[/]}

@@ -39,7 +39,7 @@
     {[/]}
 {[/]}
 {* URL *}
-{[ let url = pageUrl(page, (ds.documentationDomain() + "/" + blueprintData.locale)) /]}
+{[ let url = pageUrl(page, ds.documentationDomain()) /]}
 {* Favicon *}
 {[ let siteFaviconUrl = ((configuration.favicon && configuration.favicon.assetUrl) ? configuration.favicon.assetUrl : assetUrl("logos/favicon-default.png", ds.documentationDomain())) /]}
 {* Site image - if provided, overrides all images. Otherwise, we'll try to find first image provided in the content *}
