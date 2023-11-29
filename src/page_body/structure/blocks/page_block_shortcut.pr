@@ -8,7 +8,7 @@
             {[ let page = ds.documentationPageById(shortcut.internalId) /]}
             {[ if page ]}
                 {[ if isExportable(page) ]}
-                    {[ let url = pageUrl(page, ds.documentationDomain()) /]}
+                    {[ let url = pageUrl(page, (ds.documentationDomain() + "/" + blueprintData.locale)) /]}
                     <a href="{{ url }}" class="shortcut-item">
                 {[ else ]}      
                     <a class="shortcut-item">            
@@ -20,7 +20,7 @@
                     {[ page = firstPageFromTop(group) /]}
                     {[ if page ]}
                         {[ if isExportable(page) ]}
-                            {[ let url = pageUrl(page, ds.documentationDomain()) /]}
+                            {[ let url = pageUrl(page, (ds.documentationDomain() + "/" + blueprintData.locale)) /]}
                             <a href="{{ url }}" class="shortcut-item">
                         {[ else ]}
                             <a class="shortcut-item">

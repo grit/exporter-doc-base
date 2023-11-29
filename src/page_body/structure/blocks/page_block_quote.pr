@@ -5,5 +5,5 @@
 {* Generate rich text with quoted context *}
 <blockquote class="content-block" id="{{ getSearchIDString(block.id) }}">
     <span class="icon">{[ inject "icon_quote" context configuration /]}</span>
-    {[ inject "page_block_rich_text" context block.text /]}
+    {[ inject "page_block_rich_localized_text" context block /]}
 </blockquote>
