@@ -74,13 +74,7 @@
             {[/]}
             {[ let style = (color.count() > 0 ? "color: " + color : "") /]}
             {* Show title - always *}
-            <h1 class="page-title" style="{{ style }}">
-                {[ if (blueprintData.locale === "jp") ]}
-                {[ inject "page_block_rich_localized_text" context page /]}
-                {[ else ]}
-                {{ withHTMLNewlines(title) }}
-                {[/]}
-            </h1>
+            <h1 class="page-title" style="{{ style }}">{{ withHTMLNewlines(title) }}</h1>
             {* Show description if provided *}
             {[ if headerConfiguration.description ]}
                 <p class="subtitle" style="{{ style }}">{{ withHTMLNewlines(htmlSafeString(headerConfiguration.description)) }}</p>
