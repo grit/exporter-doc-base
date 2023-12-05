@@ -10,16 +10,13 @@
 {[ let globalConfiguration = exportConfiguration() /]}
 
 {* Title *}
+{[ let title = (group.groupBehavior === "Tabs" ? htmlSafeString(group.title) : htmlSafeString(page.title)) /]}
 {[ if (blueprintData.locale === "jp") ]}
 {[ let locData = ds.kvsData("localization") /]}
 {[ let translatedText = lookupTranslatedText(locData, "jp", page) /]}
     {[ if (translatedText !== null) ]}
-    {[ let title = (group.groupBehavior === "Tabs" ? htmlSafeString(group.title) : htmlSafeString(translatedText)) /]}
-    {[ else ]}
-    {[ let title = (group.groupBehavior === "Tabs" ? htmlSafeString(group.title) : htmlSafeString(page.title)) /]}
+    {[ title = (group.groupBehavior === "Tabs" ? htmlSafeString(group.title) : htmlSafeString(translatedText)) /]}
     {[/]}
-{[ else ]}
-{[ let title = (group.groupBehavior === "Tabs" ? htmlSafeString(group.title) : htmlSafeString(page.title)) /]}
 {[/]}
 
 {* Configure appropriate classes based on the configuration *}
