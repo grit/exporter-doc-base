@@ -33,7 +33,7 @@
                         {[ case 3 ]}
                             {[ set menuClass = (hasTopLevelHeading ? "sub-2" : "sub") /]}
                     {[/]}
-                    <li class="{{ menuClass }}"><a href="#{{ slugifyHeading(block) }}">{{ htmlSafeString(textBlockPlainText(block)) }}</a></li>
+                    <li class="{{ menuClass }}"><a href="#{{ slugifyHeading(block) }}">{[ inject "page_block_rich_localized_text" context block /]}</a></li>
                     {[/]}
                 {[/]}
             </ul>
