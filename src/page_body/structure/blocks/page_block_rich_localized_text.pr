@@ -3,10 +3,9 @@
 
 {* Generate rich text *}
 {[ if (blueprintData.locale === "jp") ]}
-{[ let locData = ds.kvsData("localization") /]}    
-{[ let translatedText = lookupTranslatedText(locData, "jp", block) /]}
-    {[ if (translatedText !== null) ]}
-        {{ translatedText }}
+{[ let text = ds.kvsLocalizationPiece("jp", block.id) /]}    
+    {[ if (text !== null) ]}
+        {{ text }}
     {[ else ]}
         {[ inject "page_block_rich_text" context block.text /]}
     {[/]}
