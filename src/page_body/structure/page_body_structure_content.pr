@@ -21,21 +21,17 @@
 {[ if showTOCOnHomepage ]}
     <div id="content-nav-container">
         <nav id="content-nav">
-        {[ if showTOC && ]}
-            {[ if showTOCOnHomepage ]}
-                <span class="content-nav-header">{{ configuration.tocCustomLabel }}</span>
-                <ul>
-                    {[ for block in page.blocks ]}
-                    {[ if (block.type.equals("Heading") && ((!configuration.tocHideHeading3 && block.headingType <= 3) || (configuration.tocHideHeading3 && block.headingType <= 2))) ]}
-                        {[ let menuClass = "" /]}
-                        {[ switch block.headingType ]}
-                            {[ case 2 ]}
-                                {[ set menuClass = (hasTopLevelHeading ? "sub" : "") /]}
-                            {[ case 3 ]}
-                                {[ set menuClass = (hasTopLevelHeading ? "sub-2" : "sub") /]}
-                        {[/]}
-                        <li class="{{ menuClass }}"><a href="#{{ slugifyHeading(block) }}">{{ htmlSafeString(textBlockPlainText(block)) }}</a></li>
-                        {[/]}
+        {[ if showTOC ]}
+            <span class="content-nav-header">{{ configuration.tocCustomLabel }}</span>
+            <ul>
+                {[ for block in page.blocks ]}
+                {[ if (block.type.equals("Heading") && (!configuration.tocHideHeading3 || (configuration.tocHideHeading3 && block.headingType !== 3))) ]}
+                    {[ let menuClass = "" /]}
+                    {[ switch block.headingType ]}
+                        {[ case 2 ]}
+                            {[ set menuClass = (hasTopLevelHeading ? "sub" : "") /]}
+                        {[ case 3 ]}
+                            {[ set menuClass = (hasTopLevelHeading ? "sub-2" : "sub") /]}
                     {[/]}
                     <li class="{{ menuClass }}"><a href="#{{ slugifyHeading(block) }}">{[ inject "page_block_rich_localized_text" context block /]}</a></li>
                     {[/]}

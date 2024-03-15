@@ -38,9 +38,6 @@
         {[ description = description.extended(configuration.seoDescriptionPrefix, configuration.seoDescriptionSuffix) /]}
     {[/]}
 {[/]}
-{* Escaped title and description *}
-{[ let escapedTitle = escapeHtml(title) /]}
-{[ let escapedDescription = escapeHtml(description) /]}
 {* URL *}
 {[ let url = pageUrl(page, (ds.documentationDomain() + "/" + blueprintData.locale)) /]}
 {* Favicon *}
@@ -78,21 +75,21 @@
 {[/]}
 {* All SEO tags *}
 <!-- Primary Meta Tags -->
-<title>{{ escapedTitle }}</title>
+<title>{{ title }}</title>
 {[ if (title.count() > 0) ]}
-<meta name="title" content="{{ escapedTitle }}" />
+<meta name="title" content="{{ title }}" />
 {[/]}
 {[ if (description.count() > 0) ]}
-<meta name="description" content="{{ escapedDescription }}" />
+<meta name="description" content="{{ description }}" />
 {[/]}
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="{{ url }}" />
 {[ if (title.count() > 0) ]}
-<meta property="og:title" content="{{ escapedTitle }}" />
+<meta property="og:title" content="{{ title }}" />
 {[/]}
 {[ if (description.count() > 0) ]}
-<meta property="og:description" content="{{ escapedDescription }}" />
+<meta property="og:description" content="{{ description }}" />
 {[/]}
 {[ if siteImageUrl ]}
 <meta property="og:image" content="{{ siteImageUrl }}" />
@@ -101,10 +98,10 @@
 <meta property="twitter:card" content="summary" />
 <meta property="twitter:url" content="{{ url }}" />
 {[ if (title.count() > 0) ]}
-<meta property="twitter:title" content="{{ escapedTitle }}" />
+<meta property="twitter:title" content="{{ title }}" />
 {[/]}
-{[ if (description.count() > 0) ]}
-<meta property="twitter:description" content="{{ escapedDescription }}" />
+{[ if (title.count() > 0) ]}
+<meta property="twitter:description" content="{{ description }}" />
 {[/]}
 {[ if siteImageUrl ]}
 <meta property="twitter:image" content="{{ siteImageUrl }}" />

@@ -8,7 +8,15 @@
 {* Fallback + optimization for customer fonts *}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+{* Optimized font loading *}
+<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Inter:400,500,700,800', 'Fira Coda:500,600']
+    }
+  });
+</script>
 
 {* Inject custom fonts *}
 {{ exportConfiguration().advancedCustomizationCustomFonts }}
@@ -25,7 +33,3 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/xml/xml.min.js" integrity="sha512-LarNmzVokUmcA7aUDtqZ6oTS+YXmUKzpGdm8DxC46A6AHu+PQiYCUlwEGWidjVYMo/QXZMFMIadZtrkfApYp/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.7/mode/jsx/jsx.min.js" integrity="sha512-+0Bk5jqcZFYMi5WaRZaTboF7s25sht/1pxmg3sXqWDeidrrw1yRqDzF25jsMOnToR8iXSqzrHfAD5wiDO1lwSA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <link rel="stylesheet" href="https://codemirror.net/5/lib/codemirror.css" />
-
-<!-- Asset download -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
