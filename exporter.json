@@ -6,7 +6,11 @@
   "organization": "PlayStation",
   "source_dir": "src",
   "assets_dir": "assets",
+<<<<<<< HEAD
   "version": "4.7.16",
+=======
+  "version": "4.10.1",
+>>>>>>> update/master
   "usesBrands": false,
   "usesLocale": true,
   "config": {
@@ -358,7 +362,7 @@
       {
         "key": "blockConfigAssetsItemActions",
         "type": "enum",
-        "label": "Asset block: Asset actions",
+        "label": "Asset block: Figma actions",
         "description": "Select which actions should be available for each asset in the list. Visible only in published documentation.",
         "category": "Blocks",
         "values": ["None", "Open in Figma"],
