@@ -16,7 +16,7 @@
         <div class="logo-wrapper">
             {[ inject "component_site_logo" context page /]}
             <script>
-                console.log('testing analytics here');
+                console.log("testing analytics here");
             </script>
 
             {[ if designSystem.designSystemSwitcher.isEnabled ]}
